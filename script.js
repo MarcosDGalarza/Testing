@@ -1,5 +1,7 @@
 const loveCard = document.getElementById('loveCard');
 
 loveCard.addEventListener('click', () => {
-    loveCard.classList.toggle('open');
+    if (!loveCard.classList.contains('open')) { // Verifica si NO tiene la clase 'open'
+        loveCard.classList.add('open'); // Solo agrega la clase 'open' una vez
+    }
 });
