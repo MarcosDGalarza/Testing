@@ -5,3 +5,4 @@ loveCard.addEventListener('click', () => {
         loveCard.classList.add('open'); // Solo agrega la clase 'open' una vez
     }
 });
+
