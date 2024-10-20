@@ -56,9 +56,23 @@ body {
 }
 
 .love-image {
-    width: 90%;
-    height: 90%;
-    border-radius: 5px;
+    width: 450px;
+    height: 250px;
+    display: flex;
+}
+.love-image img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition-duration: 300ms;
+}
+
+.love-image img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 .card.open .card-front {
@@ -174,6 +188,15 @@ h1 , h2{
     .card-back {
         margin-top: -72%;
         padding-top: 3%;
+    }
+
+    .love-image {
+        width: 280px;
+        height: 160px;
+    }
+
+    .love-image img:hover {
+        width: 200px;
     }
 
 }
